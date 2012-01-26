@@ -1,7 +1,7 @@
 (function($) {
-    $('section').hide();
+    //$('section').hide();
     
-    $('a').click(function(e) {
+    $('li > a').click(function(e) {
         e.preventDefault();
         
         var fade_in_id = $(this).attr('href'),
@@ -13,10 +13,15 @@
         $('.active').removeClass('active');
         $(this).parent().addClass('active');
         
+        window.location = fade_in_id;
+        
         $(fade_out_id).fadeOut("normal", function() {
             $(fade_in_id).fadeIn("normal");
         });
     });
     
-    $('#intro').show();
+    var active_section = window.location.hash === "" ? "#intro" : window.location.hash;
+    
+    $("[href=" + active_section + "]").parent().addClass('active');
+    $(active_section).fadeIn("normal");
 })(jQuery);

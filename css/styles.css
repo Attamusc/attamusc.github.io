@@ -9,4 +9,25 @@ img {
 
 h1 {
     margin-top: 20px;
+    text-shadow: 1px 1px 5px #555;
+}
+
+section {
+    display: none;
+}
+
+.pills li a {
+    text-shadow: 1px 1px 2px #888;
+    font-size: 16px;
+    font-weight: bold;
+    color: #555
+}
+
+.pills li a:hover {
+    background-color: #333;
+}
+
+.pills li.active a {
+    box-shadow: 1px 1px 6px #555;
+    background-color: #555;
 }
