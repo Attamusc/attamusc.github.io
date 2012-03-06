@@ -1,0 +1,5 @@
+# Ignore our compiled site
+_site/
+
+.DS_Store
+*.tmp
