@@ -2,8 +2,34 @@
 <html>
 <head>
     <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-    {{ content }}
+    <div class="container">
+        <header>
+            <h1><a href="/">Sean Dunn</a></h1>
+        </header>
+        {{ content }}
+        <hr>
+        <footer class="span12">
+            <ul class="pull-left unstyled">
+                <li>Sean Dunn</li>
+                <li>IBM Innovations Co-Op</li>
+                <li>sean@attamusc.com</li>
+            </ul>
+            <ul class="pull-right unstyled">
+                <li>Made with the help of <a href="https://github.com/mojombo/jekyll">Jekyll</a>, <a href="https://github.com/twitter/bootstrap">Bootstrap</a>, and a heart full of love.</li>
+            </ul>
+            <ul class="pull-left unstyled">
+                <li><a href="https://github.com/attamusc">github.com/attamusc</a></li>
+                <li><a href="http://twitter.com/attamusc">twitter.com/attamusc</a></li>
+                <li><a href="http://www.linkedin.com/in/seanpdunn">linkedin.com/in/seanpdunn</a></li>
+            </ul>
+        </footer>
+    </div>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript" charset="utf-8" async defer></script>
+    <script src="/js/main.js" type="text/javascript" charset="utf-8" async defer></script>
 </body>
 </html>

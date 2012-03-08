@@ -1,5 +1,9 @@
 # Ignore our compiled site
 _site/
 
+# Ignore in progress stuff
+wip/
+
 .DS_Store
 *.tmp
+*.swp

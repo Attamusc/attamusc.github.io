@@ -3,6 +3,10 @@ layout: default
 title: Sean Dunn
 ---
 
-<div>
-    <h1>Sean Dunn!!!</h1>
+<div class="row">
+    <ul id="posts" class="span12">
+        {% for post in site.posts %}
+          <li class="post-rect"><a href="{{ post.url }}">{{ post.title }}</a><br><span>{{ post.date | date_to_string }}</span></li>
+        {% endfor %}
+    </ul>
 </div>
