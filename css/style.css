@@ -6,7 +6,7 @@ header h1 {
     margin-bottom: 30px;
 }
 
-header h1 a, header h1 a:active {
+header h1 a,header h1 a:active {
     color: #333;
     text-decoration: none;
 }
@@ -17,17 +17,7 @@ header h1 a:hover {
     text-shadow: 2px 2px 4px #AAA;
 }
 
-.white {
-    background-color: #222;
-    color: #FFF;
-}
-
-.black {
-    background-color: #FFF;
-    color: #222;
-}
-
-article h1, article h2 {
+article h1,article h2 {
     border-bottom: 1px solid #DDD;
     line-height: 1.2em;
     margin-bottom: 10px;
@@ -49,9 +39,16 @@ article h2 {
     margin: 20px auto;
     padding: 10px 0px;
     background-image: -webkit-linear-gradient(top, #CCC, #EEE);
+    background-image: -moz-linear-gradient(top, #CCC, #EEE);
+    background-image: -o-linear-gradient(top, #CCC, #EEE);
+    background-image: -ms-linear-gradient(top, #CCC, #EEE);
+    background-image: linear-gradient(top, #CCC, #EEE);
     text-align: center;
     width: 75%;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
     border-radius: 10px;
+    cursor: pointer;
 }
 
 #posts:first-child {
@@ -64,6 +61,10 @@ article h2 {
 
 .post-rect:hover {
     background-image: -webkit-linear-gradient(top, #999, #BBB);
+    background-image: -moz-linear-gradient(top, #999, #BBB);
+    background-image: -o-linear-gradient(top, #999, #BBB);
+    background-image: -ms-linear-gradient(top, #999, #BBB);
+    background-image: linear-gradient(top, #999, #BBB);
 }
 
 .post-rect a {
