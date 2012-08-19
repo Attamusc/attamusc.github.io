@@ -2,6 +2,7 @@ header h1 {
     padding: 15px 120px;
     text-align: right;
     font-size: 52px;
+    font-weight: 100;
     margin-top: 20px;
     margin-bottom: 30px;
 }
@@ -103,4 +104,11 @@ footer ul:first-child {
 
 footer ul:last-child {
     margin-left: 22px;
+}
+
+footer > p {
+    position: relative;
+    top: -40px;
+    font-size: 11px;
+    width: 304px;
 }
