@@ -3,7 +3,3 @@ _site/
 
 # Ignore in progress stuff
 wip/
-
-.DS_Store
-*.tmp
-*.swp
