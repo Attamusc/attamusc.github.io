@@ -53,12 +53,13 @@ header a {
 }
 
 .header ul li {
-  font-size: 22px;
+  font-size: 27px;
   float: left;
-  padding: 5px;
   margin: 0 10px;
-  border-radius: 50%;
-  background-color: #FFF;
+}
+
+.header ul a:hover {
+  color: #CCC;
 }
 
 .header ul li:last-child {
