@@ -3,3 +3,5 @@ _site/
 
 # Ignore in progress stuff
 wip/
+public
+.powder
