@@ -1,0 +1,19 @@
+#nprogress {
+  .bar {
+    top: 42px;
+    background: $button-grey;
+  }
+
+  .spinner {
+    top: 57px;
+  }
+
+  .spinner-icon {
+    border-top-color: $button-grey;
+    border-left-color: $button-grey;
+  }
+
+  .peg {
+    display: none;
+  }
+}

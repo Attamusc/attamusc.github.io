@@ -1,0 +1,40 @@
+.site-header-wrap {
+  background-color: $blue;
+  text-transform: uppercase;
+
+  .site-header {
+    font-size: 14px;
+    font-weight: 600;
+    margin: 0 auto;
+    max-width: 889px;
+    padding: 10px 0;
+    text-transform: uppercase;
+    width: 100%;
+    @include clearfix();
+    
+    a {
+      -webkit-transition: color 0.2s ease-in-out;
+      -moz-transition: color 0.2s ease-in-out;
+      transition: color 0.2s ease-in-out;
+      color: $button-grey;
+
+      &:hover {
+        color: $grey;
+      }
+    }
+  }
+
+  .site-title {
+    float: left;
+    font-size: 16px;
+    margin-left: 40px;
+    padding: 1px 0;
+  }
+
+  .index {
+    float: right;
+    font-size: 16px;
+    margin-right: 40px;
+  }
+
+}

@@ -1,1 +1,0 @@
-<em>Disclaimer:</em> The opinions and interests expressed on this blog are my own and don't necessarily represent IBM's positions, strategies or views. The funny stuff is totally mine.

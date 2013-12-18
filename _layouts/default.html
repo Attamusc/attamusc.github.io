@@ -1,34 +1,51 @@
 <!doctype html>
 <html>
-<head>
-  <title>{{ page.title }}</title>
-  <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
-  <link href='http://fonts.googleapis.com/css?family=Bubblegum+Sans' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="/css/ss-social.css">
-  <link rel="stylesheet" href="/css/ss-standard.css">
-  <link rel="stylesheet" href="/css/style.css">
-</head>
-<body>
-  <header>
-    <div class="header">
-      <h1><a href="/">Sean Dunn</a></h1>
-      <ul>
-        <li><a href="https://github.com/attamusc" class="ss-icon ss-social-circle" title="Github">githuboctocat</a></li>
-        <li><a href="http://twitter.com/attamusc" class="ss-icon ss-social-circle" title="Twitter">twitter</a></li>
-        <li><a href="http://www.linkedin.com/in/seanpdunn" class="ss-icon ss-social-circle" title="Linkedin">linkedin</a></li>
-        <li><a href="/about.html" class="ss-icon" title="About">user</a></li>
-      </ul>
-    </div>
-  </header>
-  <div class="main">
-    {{ content }}
-  </div>
-  <footer>
-    <p>{% include disclaimer.html %}</p>
-    <p>Made with <a href="https://github.com/mojombo/jekyll">Jekyll</a> and a heart full of love.</p>
-  </footer>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-  <script src="/js/main.js" type="text/javascript" charset="utf-8"></script>
-</body>
+    <title>{{ site.title }}</title>
+    <meta name="description" content="A blog about things and stuff. Mostly stuff." />
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="MobileOptimized" content="320" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" type="text/css" href="/css/styles.css" />
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic|Open+Sans:700,400" />
+  </head>
+  <body>
+    <div id="wrapper">
+      <header class="site-header-wrap">
+        <div class="site-header">
+          <div class="site-title">
+            <a class="js-ajax-link" title="{{ site.title }}" href="/">{{ site.title }}</a>
+          </div>
+          <nav class="index">
+            <a class="js-ajax-link js-show-index" href="/"><i class="fa fa-bars"></i></a>
+          </nav>
+        </div>
+      </header>
+
+      <div id="ajax-container">
+        {{ content }}
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="ego-plugs">
+        <a href="http://github.com/Attamusc"><i class="fa fa-github-square"></i></a>
+        <a href="http://twitter.com/attamusc"><i class="fa fa-twitter-square"></i></a>
+      </div>
+
+      <div class="attributions">
+        <section class="copyright">All content copyright <a href="/">Sean Dunn</a> &copy; 2013</section>
+      </div>
+    </footer>
+
+    <script type="text/javascript" src="/js/vendor/jquery.js"></script>
+    <script type="text/javascript" src="/js/vendor/history.js"></script>
+    <script type="text/javascript" src="/js/vendor/nprogress.js"></script>
+    <script type="text/javascript" src="/js/main.js"></script>
+  </body>
 </html>

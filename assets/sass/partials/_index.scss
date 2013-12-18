@@ -1,0 +1,54 @@
+#latest-post {
+  display: none;
+}
+
+.post-list {
+  list-style: none;
+  margin: 80px 40px 0;
+}
+
+.post-stub {
+  border-bottom: 1px dotted #303030;
+  margin: 0;
+
+  &:first-child {
+    padding-top: 0;
+  }
+
+  &:last-child {
+    border-bottom: 1px solid transparent;
+  }
+
+  a {
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    color: $grey;
+    display: block;
+    padding: 20px 0;
+    text-align: center;
+
+    &:hover {
+      background: fade-out($blue, 0.9);
+    }
+  }
+}
+
+.post-stub-title {
+  display: inline-block;
+  margin: 0;
+  text-transform: none;
+}
+
+.post-stub-date {
+  display: inline-block;
+}
+.post-stub-date:before {
+  content: "/ ";
+}
+
+.next-posts-link a,
+.previous-posts-link a {
+  display: block;
+  padding: 8px 11px;
+}

@@ -1,0 +1,46 @@
+.container {
+  margin: 0 auto;
+  position: relative;
+  width: 100%;
+  max-width: 889px;
+}
+
+#wrapper {
+  height: auto;
+  min-height: 100%;
+  margin-bottom: -123px;
+
+  &:after {
+    content: "";
+    display: block;
+    height: 123px;
+  }
+}
+
+.button {
+  background: $button-blue;
+  border: none;
+  border-radius: 3px;
+  color: $button-grey;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 10px 12px;
+  text-transform: uppercase;
+
+  &:hover {
+    background: $button-grey;
+  }
+}
+
+.button-square {
+  background: $button-blue;
+  color: $button-grey;
+  float: left;
+  margin: 0 0 0 10px;
+  padding: 3px 8px;
+  
+  &:hover {
+    background: $button-grey;
+    color: $button-blue;
+  }
+}
