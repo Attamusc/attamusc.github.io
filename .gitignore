@@ -1,7 +1,0 @@
-# Ignore our compiled site
-_site/
-
-# Ignore in progress stuff
-wip/
-public
-.powder
