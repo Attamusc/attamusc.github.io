@@ -1,0 +1,64 @@
+baseurl = "http://www.attamusc.com"
+title = "Attamusc"
+theme = "hugo-coder"
+languagecode = "en"
+defaultcontentlanguage = "en"
+
+paginate = 20
+
+pygmentsstyle = "bw"
+pygmentscodefences = true
+pygmentscodefencesguesssyntax = true
+
+[params]
+  author = "Sean Dunn"
+  description = "Hey there! I'm Sean."
+  keywords = "blog,portfolio,personal,attamusc"
+  gravatar = "sean@attamusc.com"
+
+  favicon_32 = "/img/favicon-32x32.png"
+  favicon_16 = "/img/favicon-16x16.png"
+
+  since = 2019
+
+  enableTwemoji = true
+
+  colorScheme = "auto"
+  hidecolorschemetoggle = false
+
+  # customCSS = ["css/custom.css"]
+  # customSCSS = ["scss/custom.scss"]
+  # customJS = ["js/custom.js"]
+
+[taxonomies]
+  category = "categories"
+  series = "series"
+  tag = "tags"
+  author = "authors"
+
+# Social links
+[[params.social]]
+  name = "Github"
+  icon = "fa fa-github fa-2x"
+  weight = 1
+  url = "https://github.com/attamusc/"
+[[params.social]]
+  name = "Mastodon"
+  icon = "fa fa-linkedin fa-2x"
+  weight = 3
+  url = "https://linkedin.com/in/seanpdunn"
+[[params.social]]
+  name = "Mastodon"
+  icon = "fa fa-mastodon fa-2x"
+  weight = 2
+  url = "https://social.lol/@attamusc"
+
+# Menu links
+[[menu.main]]
+  # name = "Posts"
+  # weight = 1
+  # url  = "posts/"
+[[menu.main]]
+  name = "About"
+  weight = 2
+  url = "about/"

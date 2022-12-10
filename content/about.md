@@ -1,18 +1,16 @@
----
-title: "About"
-description: "Hey there! I'm Sean."
-date: "2019-02-28"
-layout: "about"
-aliases:
-  - "about-me"
-  - "contact"
-author: "Sean Dunn"
-disableShare: true
-hideMeta: true
----
-# I'm Sean
++++
+title = "About"
+description = "Hey there! I'm Sean."
+date = "2019-02-28"
+layout = "about"
+aliases = [
+  "about-me",
+  "contact"
+]
+author = "Sean Dunn"
++++
 
-> I go by attamusc (`atə-məsk`) pretty much everywhere
+I go by attamusc (`atə-məsk`) pretty much everywhere
 
 I'm a Sr. Engineering Manager at [GitHub](https://github.com/github). Previously, I was an Engineering Manager at Adobe on the [Behance Network](https://www.behance.net) and [Adobe Portfolio](https://portfolio.adobe.com) team.
 

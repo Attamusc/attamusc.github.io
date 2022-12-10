@@ -1,9 +1,15 @@
-{{- define "main" }}
+{{ define "content" }}
+  <section class="container page">
+    <article>
+      <header>
+        <h1 class="title">
+          <a class="title-link" href="{{ .Permalink | safeURL }}">
+            I'm Sean
+          </a>
+        </h1>
+      </header>
 
-<article class="post-single">
-  <div class="post-content">
-    {{ .Content }}
-  </div>
-</article>
-
-{{- end }}{{/* end main */}}
+      {{ .Content }}
+    </article>
+  </section>
+{{ end }}
