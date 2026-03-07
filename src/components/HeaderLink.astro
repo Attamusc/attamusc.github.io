@@ -1,0 +1,20 @@
+---
+type Props = astroHTML.JSX.AnchorHTMLAttributes;
+
+const { href, class: className, ...props } = Astro.props;
+
+const { pathname } = Astro.url;
+const isActive = href === pathname || href === pathname.replace(/\/$/, '');
+---
+
+<a
+	href={href}
+	class:list={[
+		'text-text-muted hover:text-accent transition-colors no-underline',
+		{ 'font-semibold text-text-heading underline underline-offset-4': isActive },
+		className,
+	]}
+	{...props}
+>
+	<slot />
+</a>

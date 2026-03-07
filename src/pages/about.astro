@@ -1,0 +1,66 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { NAME, SITE_TITLE } from '../consts';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={`About | ${SITE_TITLE}`} description={`About ${NAME}`} />
+	</head>
+	<body>
+		<div class="mx-auto max-w-2xl px-4">
+			<Header />
+			<main class="py-8">
+				<article class="prose prose-lg dark:prose-invert max-w-none
+					prose-headings:text-text-heading
+					prose-a:text-accent hover:prose-a:text-accent-hover
+					prose-blockquote:border-accent prose-blockquote:text-text-muted
+				">
+					<h2>Hey there!</h2>
+					<h3>I'm Sean</h3>
+					<blockquote>
+						<p>I go by attamusc (<code>atə-məsk</code>) pretty much everywhere</p>
+					</blockquote>
+
+					<h3>I'm a Director of Engineering <a href="https://github.com/github">@github</a></h3>
+					<p>I spend a lot of my time thinking about software and the teams that build it.</p>
+					<p>When I'm not doing that, I'm:</p>
+					<ul>
+						<li>Spending time with my family</li>
+						<li>Watching too much TV</li>
+						<li>Playing video games</li>
+						<li>Working on one of far too many abandoned <s>rust re-writes</s> side projects.</li>
+					</ul>
+
+					<h3>What's an <code>attamusc</code>?</h3>
+					<p>
+						I had someone ask this recently and the explanation finally clicked. I'm reposting that
+						here, to hopefully explain why I've stuck with this handle for so long:
+					</p>
+					<blockquote>
+						<p>
+							For anyone who's interacted with me, it's fairly obvious I'm a giant nerd. I've
+							watched a ton of anime, I've played a ton of games, I've read a ton of comics. That
+							took off right around when I was 12 or 13, where I could finally pick the stuff I
+							wanted to watch myself. There was a show that came on Adult Swim (Cartoon Network's
+							after school/late night programming) called FLCL, that was only like 6 episodes. It
+							was buck wild, and in-between the anime over-the-top-ness it was about a 13 year old
+							boy come to terms with growing up and realizing he was at the point where he wasn't a
+							kid anymore and could see that adults weren't anything more than older, tired,
+							sometimes-broken kids. Also, there were space pirates and guitar swords and giant
+							robots. There's a "big boss" character that everyone is searching for, who's called
+							"Space Pirate Atomsk". I needed to come up with a name for a character in a game I was
+							playing at the time, and decided to spell Atomsk phonetically - as close as a
+							13-year-old could imagine. Attamusc is what came out, and it's been my handle
+							everywhere since.
+						</p>
+					</blockquote>
+				</article>
+			</main>
+			<Footer />
+		</div>
+	</body>
+</html>

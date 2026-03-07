@@ -1,0 +1,19 @@
+---
+import HeaderLink from './HeaderLink.astro';
+import ThemeToggle from './ThemeToggle.astro';
+import { SITE_TITLE } from '../consts';
+---
+
+<header class="mt-8 mb-8">
+	<nav class="flex items-center justify-between">
+		<a href="/" class="text-xl font-bold text-text-heading dark:text-text-heading no-underline hover:text-accent">
+			{SITE_TITLE}
+		</a>
+		<div class="flex items-center gap-4">
+			<HeaderLink href="/about">About</HeaderLink>
+			<!-- <HeaderLink href="/blog">Blog</HeaderLink> -->
+			<HeaderLink href="https://github.com/Attamusc" target="_blank">GitHub</HeaderLink>
+			<ThemeToggle />
+		</div>
+	</nav>
+</header>
